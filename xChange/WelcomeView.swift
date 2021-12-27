@@ -42,9 +42,14 @@ struct WelcomeView: View {
                 .padding()
                 .overlay(RoundedRectangle(cornerRadius: 5.0)
                             .stroke(Color("#9296F0"), lineWidth: 1.0))
-                .padding(.bottom, 20)
                 .autocapitalization(.none)
-            
+            HStack {
+                Spacer()
+                Button(action:{}){
+                    Text("Forgot Password?")
+                }
+            }
+            .padding(.bottom, 20)
             
             Button(action:{
                 
@@ -60,6 +65,11 @@ struct WelcomeView: View {
                     )
                 .background(RoundedRectangle(cornerRadius: 10).fill(Color("#9296F0")))
             }
+            
+            Button(action:{}){
+                Text("I'm new here. Create an account?")
+            }
+            .padding(.top, 20)
         }
         .padding()
     }
