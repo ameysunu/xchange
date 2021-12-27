@@ -12,6 +12,7 @@
 		9DC9C50C277A647100E0E9AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DC9C50B277A647100E0E9AD /* Assets.xcassets */; };
 		9DC9C50F277A647100E0E9AD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DC9C50E277A647100E0E9AD /* Preview Assets.xcassets */; };
 		9DC9C516277A653200E0E9AD /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC9C515277A653200E0E9AD /* WelcomeView.swift */; };
+		9DC9C519277A801E00E0E9AD /* KeyboardHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC9C518277A801E00E0E9AD /* KeyboardHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		9DC9C50B277A647100E0E9AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DC9C50E277A647100E0E9AD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9DC9C515277A653200E0E9AD /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		9DC9C518277A801E00E0E9AD /* KeyboardHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 		9DC9C506277A647000E0E9AD /* xChange */ = {
 			isa = PBXGroup;
 			children = (
+				9DC9C517277A800800E0E9AD /* Model */,
 				9DC9C507277A647000E0E9AD /* xChangeApp.swift */,
 				9DC9C509277A647000E0E9AD /* ContentView.swift */,
 				9DC9C515277A653200E0E9AD /* WelcomeView.swift */,
@@ -68,6 +71,14 @@
 				9DC9C50E277A647100E0E9AD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9DC9C517277A800800E0E9AD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9DC9C518277A801E00E0E9AD /* KeyboardHandler.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +154,7 @@
 				9DC9C50A277A647000E0E9AD /* ContentView.swift in Sources */,
 				9DC9C516277A653200E0E9AD /* WelcomeView.swift in Sources */,
 				9DC9C508277A647000E0E9AD /* xChangeApp.swift in Sources */,
+				9DC9C519277A801E00E0E9AD /* KeyboardHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
