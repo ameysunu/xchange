@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct WelcomeView: View {
+    @State var email: String = ""
+    @State var password: String = ""
     var body: some View {
         VStack {
             Image("welcome")
@@ -24,10 +26,31 @@ struct WelcomeView: View {
                 .fontWeight(.bold)
                 .foregroundColor(Color("#9296F0"))
             Spacer()
+            TextField("",text: $email)
+                .placeholder(when: email.isEmpty){
+                    Text("Email").foregroundColor(Color("#9296F0"))
+                }
+                .padding()
+                .overlay(RoundedRectangle(cornerRadius: 5.0)
+                            .stroke(Color("#9296F0"), lineWidth: 1.0))
+                .padding(.bottom, 20)
+                .autocapitalization(.none)
+            SecureField("",text: $password)
+                .placeholder(when: email.isEmpty){
+                    Text("Password").foregroundColor(Color("#9296F0"))
+                }
+                .padding()
+                .overlay(RoundedRectangle(cornerRadius: 5.0)
+                            .stroke(Color("#9296F0"), lineWidth: 1.0))
+                .padding(.bottom, 20)
+                .autocapitalization(.none)
+            
+            
             Button(action:{
                 
             }) {
                 Text("Continue")
+                    .fontWeight(.medium)
                     .padding(8)
                     .frame(maxWidth: .infinity)
                     .foregroundColor(.black)
@@ -42,8 +65,23 @@ struct WelcomeView: View {
     }
 }
 
+
+extension View {
+    func placeholder<Content: View>(
+        when shouldShow: Bool,
+        alignment: Alignment = .leading,
+        @ViewBuilder placeholder: () -> Content) -> some View {
+
+        ZStack(alignment: alignment) {
+            placeholder().opacity(shouldShow ? 1 : 0)
+            self
+        }
+    }
+}
+
 struct WelcomeView_Previews: PreviewProvider {
     static var previews: some View {
         WelcomeView()
+.previewInterfaceOrientation(.portrait)
     }
 }
