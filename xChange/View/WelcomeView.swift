@@ -8,9 +8,12 @@
 import SwiftUI
 
 struct WelcomeView: View {
+    
     @State var email: String = ""
     @State var password: String = ""
     @StateObject var keyboardHandler = KeyboardHandler()
+    @State var activeSheet: ActiveSheet?
+    
     var body: some View {
         VStack {
             Image("welcome")
@@ -68,12 +71,23 @@ struct WelcomeView: View {
                         .background(RoundedRectangle(cornerRadius: 10).fill(Color("#9296F0")))
                 }
                 
-                Button(action:{}){
+                Button(action:{
+                    activeSheet = .second
+                }){
                     Text("I'm new here. Create an account?")
                 }
                 .padding(.top, 20)
             }
             .padding()
+        }
+        .sheet(item: $activeSheet){ item in
+            switch item {
+            case .first:
+                WelcomeView()
+            case .second:
+                RegisterView()
+            }
+            
         }
         .frame(maxHeight: .infinity)
         .padding(.bottom, keyboardHandler.keyboardHeight)
