@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D844785277B66CE0022613A /* ForgotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D844784277B66CE0022613A /* ForgotView.swift */; };
 		9DC9C508277A647000E0E9AD /* xChangeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC9C507277A647000E0E9AD /* xChangeApp.swift */; };
 		9DC9C50A277A647000E0E9AD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC9C509277A647000E0E9AD /* ContentView.swift */; };
 		9DC9C50C277A647100E0E9AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DC9C50B277A647100E0E9AD /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9D844784277B66CE0022613A /* ForgotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotView.swift; sourceTree = "<group>"; };
 		9DC9C504277A647000E0E9AD /* xChange.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xChange.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DC9C507277A647000E0E9AD /* xChangeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xChangeApp.swift; sourceTree = "<group>"; };
 		9DC9C509277A647000E0E9AD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 			children = (
 				9DC9C515277A653200E0E9AD /* WelcomeView.swift */,
 				9DC9C51F277A891E00E0E9AD /* RegisterView.swift */,
+				9D844784277B66CE0022613A /* ForgotView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -168,6 +171,7 @@
 				9DC9C51E277A87B300E0E9AD /* Model.swift in Sources */,
 				9DC9C50A277A647000E0E9AD /* ContentView.swift in Sources */,
 				9DC9C516277A653200E0E9AD /* WelcomeView.swift in Sources */,
+				9D844785277B66CE0022613A /* ForgotView.swift in Sources */,
 				9DC9C520277A891E00E0E9AD /* RegisterView.swift in Sources */,
 				9DC9C508277A647000E0E9AD /* xChangeApp.swift in Sources */,
 				9DC9C519277A801E00E0E9AD /* KeyboardHandler.swift in Sources */,

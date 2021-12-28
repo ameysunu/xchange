@@ -50,7 +50,9 @@ struct WelcomeView: View {
                     .autocapitalization(.none)
                 HStack {
                     Spacer()
-                    Button(action:{}){
+                    Button(action:{
+                        activeSheet = .first
+                    }){
                         Text("Forgot Password?")
                     }
                 }
@@ -83,7 +85,7 @@ struct WelcomeView: View {
         .sheet(item: $activeSheet){ item in
             switch item {
             case .first:
-                WelcomeView()
+                ForgotView()
             case .second:
                 RegisterView()
             }
