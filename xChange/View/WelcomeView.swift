@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Network
 
 struct WelcomeView: View {
     
@@ -13,6 +14,8 @@ struct WelcomeView: View {
     @State var password: String = ""
     @StateObject var keyboardHandler = KeyboardHandler()
     @State var activeSheet: ActiveSheet?
+    
+    @State var alertItem: AlertItem?
     
     var body: some View {
         VStack {
@@ -59,7 +62,15 @@ struct WelcomeView: View {
                 .padding(.bottom, 20)
                 
                 Button(action:{
-                    
+                    realmLogin(email: email, password: password){
+                        (success) -> Void in
+                        if success {
+                            print("done")
+                        } else {
+                            print("failed")
+                            self.alertItem = AlertItem(title: Text("Error"), message: Text(e), dismissButton: .default(Text("Done")))
+                        }
+                    }
                 }) {
                     Text("Continue")
                         .fontWeight(.medium)
@@ -82,6 +93,10 @@ struct WelcomeView: View {
             }
             .padding()
         }
+        .alert(item: $alertItem){ item in
+            Alert(title: item.title, message: item.message, dismissButton: item.dismissButton)
+        }
+        
         .sheet(item: $activeSheet){ item in
             switch item {
             case .first:
