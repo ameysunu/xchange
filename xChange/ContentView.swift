@@ -9,8 +9,13 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        WelcomeView()
-            .preferredColorScheme(.light)
+        if app.currentUser != nil {
+            LoadView()
+                .preferredColorScheme(.light)
+        } else {
+            WelcomeView()
+                .preferredColorScheme(.light)
+        }
     }
 }
 
