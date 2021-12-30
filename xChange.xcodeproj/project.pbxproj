@@ -19,6 +19,7 @@
 		9DC9C51E277A87B300E0E9AD /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC9C51D277A87B300E0E9AD /* Model.swift */; };
 		9DC9C520277A891E00E0E9AD /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC9C51F277A891E00E0E9AD /* RegisterView.swift */; };
 		9DD2E4CF277DDD4600D3C1E5 /* LoadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD2E4CE277DDD4600D3C1E5 /* LoadView.swift */; };
+		9DD2E4D1277DE64800D3C1E5 /* LoadList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD2E4D0277DE64800D3C1E5 /* LoadList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		9DC9C51D277A87B300E0E9AD /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		9DC9C51F277A891E00E0E9AD /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		9DD2E4CE277DDD4600D3C1E5 /* LoadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadView.swift; sourceTree = "<group>"; };
+		9DD2E4D0277DE64800D3C1E5 /* LoadList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				9DC9C518277A801E00E0E9AD /* KeyboardHandler.swift */,
 				9DC9C51D277A87B300E0E9AD /* Model.swift */,
+				9DD2E4D0277DE64800D3C1E5 /* LoadList.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 				9DC9C51E277A87B300E0E9AD /* Model.swift in Sources */,
 				9DC9C50A277A647000E0E9AD /* ContentView.swift in Sources */,
 				9DC9C516277A653200E0E9AD /* WelcomeView.swift in Sources */,
+				9DD2E4D1277DE64800D3C1E5 /* LoadList.swift in Sources */,
 				9DD2E4CF277DDD4600D3C1E5 /* LoadView.swift in Sources */,
 				9D844785277B66CE0022613A /* ForgotView.swift in Sources */,
 				9DC9C520277A891E00E0E9AD /* RegisterView.swift in Sources */,
