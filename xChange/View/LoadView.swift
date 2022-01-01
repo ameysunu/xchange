@@ -99,6 +99,15 @@ struct LoadView: View {
                         )
                         .background(RoundedRectangle(cornerRadius: 10).fill(Color("#9296F0")))
                 }
+                HStack{
+                    Spacer()
+                    Button(action:{
+                        
+                    }) {
+                        Text("Skip for now")
+                    }
+                    Spacer()
+                }
             } else {
                 Button(action:{
                     self.continuePressed.toggle()
