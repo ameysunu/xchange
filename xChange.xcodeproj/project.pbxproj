@@ -10,6 +10,7 @@
 		9D7479E3277D1BCA00213F43 /* RealmAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7479E2277D1BCA00213F43 /* RealmAuth.swift */; };
 		9D7479E7277D1FA600213F43 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9D7479E6277D1FA600213F43 /* RealmSwift */; };
 		9D844785277B66CE0022613A /* ForgotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D844784277B66CE0022613A /* ForgotView.swift */; };
+		9DA61F0E2780922E00619F2E /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA61F0D2780922E00619F2E /* ImagePicker.swift */; };
 		9DC9C508277A647000E0E9AD /* xChangeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC9C507277A647000E0E9AD /* xChangeApp.swift */; };
 		9DC9C50A277A647000E0E9AD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC9C509277A647000E0E9AD /* ContentView.swift */; };
 		9DC9C50C277A647100E0E9AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DC9C50B277A647100E0E9AD /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		9D7479E2277D1BCA00213F43 /* RealmAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmAuth.swift; sourceTree = "<group>"; };
 		9D844784277B66CE0022613A /* ForgotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotView.swift; sourceTree = "<group>"; };
+		9DA61F0D2780922E00619F2E /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		9DC9C504277A647000E0E9AD /* xChange.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xChange.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DC9C507277A647000E0E9AD /* xChangeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xChangeApp.swift; sourceTree = "<group>"; };
 		9DC9C509277A647000E0E9AD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				9DC9C518277A801E00E0E9AD /* KeyboardHandler.swift */,
 				9DC9C51D277A87B300E0E9AD /* Model.swift */,
 				9DD2E4D0277DE64800D3C1E5 /* LoadList.swift */,
+				9DA61F0D2780922E00619F2E /* ImagePicker.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 				9DD2E4CF277DDD4600D3C1E5 /* LoadView.swift in Sources */,
 				9D844785277B66CE0022613A /* ForgotView.swift in Sources */,
 				9DC9C520277A891E00E0E9AD /* RegisterView.swift in Sources */,
+				9DA61F0E2780922E00619F2E /* ImagePicker.swift in Sources */,
 				9D7479E3277D1BCA00213F43 /* RealmAuth.swift in Sources */,
 				9DC9C508277A647000E0E9AD /* xChangeApp.swift in Sources */,
 				9DC9C519277A801E00E0E9AD /* KeyboardHandler.swift in Sources */,
