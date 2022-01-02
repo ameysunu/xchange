@@ -14,6 +14,7 @@ struct LoadView: View {
     @State private var isShowPhotoLibrary = false
     @State private var image = UIImage()
     @State var imageTapped: Bool = false
+    @State var skipped: Bool = false
     
     var body: some View {
         VStack {
@@ -101,10 +102,12 @@ struct LoadView: View {
                 }
                 HStack{
                     Spacer()
-                    Button(action:{
-                        
-                    }) {
-                        Text("Skip for now")
+                    NavigationLink(destination: HomeView().navigationBarHidden(true), isActive: $skipped){
+                        Button(action:{
+                            self.skipped.toggle()
+                        }) {
+                            Text("Skip for now")
+                        }
                     }
                     Spacer()
                 }
