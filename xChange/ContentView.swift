@@ -6,8 +6,16 @@
 //
 
 import SwiftUI
+import RealmSwift
 
 struct ContentView: View {
+    init (){
+        
+        let realm = try! Realm()
+        print(Realm.Configuration.defaultConfiguration.fileURL!)
+        uid = String(app.currentUser?.id ?? "")
+        print(uid as Any)
+    }
     var body: some View {
         if app.currentUser != nil {
             LoadView()
