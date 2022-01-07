@@ -23,6 +23,7 @@
 		9DC9C520277A891E00E0E9AD /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC9C51F277A891E00E0E9AD /* RegisterView.swift */; };
 		9DD2E4CF277DDD4600D3C1E5 /* LoadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD2E4CE277DDD4600D3C1E5 /* LoadView.swift */; };
 		9DD2E4D1277DE64800D3C1E5 /* LoadList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD2E4D0277DE64800D3C1E5 /* LoadList.swift */; };
+		9DE3FEC52788DCF300C76BA1 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE3FEC42788DCF300C76BA1 /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		9DC9C51F277A891E00E0E9AD /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		9DD2E4CE277DDD4600D3C1E5 /* LoadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadView.swift; sourceTree = "<group>"; };
 		9DD2E4D0277DE64800D3C1E5 /* LoadList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadList.swift; sourceTree = "<group>"; };
+		9DE3FEC42788DCF300C76BA1 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				9D7479E2277D1BCA00213F43 /* RealmAuth.swift */,
+				9DE3FEC42788DCF300C76BA1 /* LocationManager.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 				9DC9C520277A891E00E0E9AD /* RegisterView.swift in Sources */,
 				9DA61F0E2780922E00619F2E /* ImagePicker.swift in Sources */,
 				9D7479E3277D1BCA00213F43 /* RealmAuth.swift in Sources */,
+				9DE3FEC52788DCF300C76BA1 /* LocationManager.swift in Sources */,
 				9D908D4D2781D83000504E24 /* HomeView.swift in Sources */,
 				9DC9C508277A647000E0E9AD /* xChangeApp.swift in Sources */,
 				9DC9C519277A801E00E0E9AD /* KeyboardHandler.swift in Sources */,
@@ -348,6 +352,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"xChange/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need to know your location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -377,6 +382,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"xChange/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need to know your location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
