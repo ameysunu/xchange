@@ -7,6 +7,7 @@
 
 import Foundation
 import RealmSwift
+import SwiftUI
 
 let app = App(id: "swiftapp-ebdla")
 typealias success = Bool
@@ -43,4 +44,22 @@ func realmRegister(email:String, password:String, completion: @escaping (success
         print("Successfully registered user.")
     }
     
+}
+
+func uploadImage(image: UIImage ,completion: @escaping (success) -> Void){
+    let data = NSData(data: image.jpegData(compressionQuality: 0.9)!)
+    var myblob = UserData()
+    myblob.image = data
+    myblob.id = app.currentUser?.id
+    
+    let realm = try! Realm()
+    
+    if myblob.image!.length > 100000 {
+        completion(false)
+    } else {
+        try! realm.write {
+            realm.add(myblob)
+            completion(true)
+        }
+    }
 }
