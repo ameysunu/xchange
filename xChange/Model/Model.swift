@@ -7,6 +7,7 @@
 
 import Foundation
 import SwiftUI
+import RealmSwift
 
 enum ActiveSheet: Identifiable {
     case first, second
@@ -21,4 +22,10 @@ struct AlertItem: Identifiable {
     var title: Text
     var message: Text
     var dismissButton: Alert.Button
+}
+
+class UserData: Object, Identifiable {
+    @objc dynamic var id: String?
+    @objc dynamic var name: String?
+    @objc dynamic var image: NSData?
 }

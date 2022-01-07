@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Network
 
 struct LoadView: View {
     
@@ -14,6 +15,9 @@ struct LoadView: View {
     @State private var isShowPhotoLibrary = false
     @State private var image = UIImage()
     @State var imageTapped: Bool = false
+    @State var skipped: Bool = false
+    
+    @State var alertItem: AlertItem?
     
     var body: some View {
         VStack {
@@ -86,7 +90,27 @@ struct LoadView: View {
             Spacer()
             if continuePressed {
                 Button(action:{
-                    
+                    if image.size.width == 0 {
+                        self.alertItem = AlertItem(title: Text("Error"), message: Text("There has been an error uploading the image."), dismissButton: .default(Text("Done")))
+                    } else {
+                        uploadImage(image: image, name: username){
+                            (success) -> Void in
+                            if success {
+                                self.skipped.toggle()
+                                //                                addName(name: username){
+                                //                                    (success) -> Void in
+                                //                                    if success {
+                                //                                        self.skipped.toggle()
+                                //                                    } else {
+                                //                                        self.alertItem = AlertItem(title: Text("Error"), message: Text("Name cannot be empty."), dismissButton: .default(Text("Done")))
+                                //                                    }
+                                //                                }
+                            } else {
+                                self.alertItem = AlertItem(title: Text("Error"), message: Text("You have selected a very large image. Kindly select a lower image."), dismissButton: .default(Text("Done")))
+                            }
+                        }
+                        
+                    }
                 }){
                     Text("Save")
                         .fontWeight(.medium)
@@ -101,10 +125,12 @@ struct LoadView: View {
                 }
                 HStack{
                     Spacer()
-                    Button(action:{
-                        
-                    }) {
-                        Text("Skip for now")
+                    NavigationLink(destination: HomeView().navigationBarHidden(true), isActive: $skipped){
+                        Button(action:{
+                            self.skipped.toggle()
+                        }) {
+                            Text("Skip for now")
+                        }
                     }
                     Spacer()
                 }
@@ -125,6 +151,9 @@ struct LoadView: View {
                 }
             }
             
+        }
+        .alert(item: $alertItem){ item in
+            Alert(title: item.title, message: item.message, dismissButton: item.dismissButton)
         }
         .sheet(isPresented: $isShowPhotoLibrary){
             ImagePicker(sourceType: .photoLibrary, selectedImage: self.$image)
