@@ -18,7 +18,7 @@ struct ContentView: View {
     }
     var body: some View {
         if app.currentUser != nil {
-            LoadView()
+            HomeView()
                 .preferredColorScheme(.light)
         } else {
             WelcomeView()
