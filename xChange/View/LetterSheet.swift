@@ -8,11 +8,68 @@
 import SwiftUI
 
 struct LetterSheet: View {
+    @State var title: String = ""
+    @State var content: String = ""
+    
+    init() {
+        UITextView.appearance().backgroundColor = .clear
+    }
+    
     var body: some View {
         ZStack {
             Color("#9296F0")
                 .ignoresSafeArea()
-            Text("Hello, World!")
+            VStack{
+                HStack {
+                    Text("Create a Letter")
+                        .fontWeight(.medium)
+                        .foregroundColor(.white)
+                        .font(.title)
+                        .padding(.top, 20)
+                    Spacer()
+                }
+                Image("lettersheet")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(height: 200)
+                    .padding()
+                TextField("Title",text: $title)
+                    .padding()
+                    .overlay(RoundedRectangle(cornerRadius: 5.0)
+                                .stroke(.white, lineWidth: 1.0))
+                    .padding(.bottom, 20)
+                HStack {
+                    Text("Content")
+                        .fontWeight(.medium)
+                        .foregroundColor(.white)
+                    Spacer()
+                }
+                ZStack {
+                    TextEditor(text: $content)
+                        .background(Color("#9296F0"))
+                        .overlay(RoundedRectangle(cornerRadius: 5.0)
+                                    .stroke(.white, lineWidth: 1.0))
+                    Text(content).opacity(0).padding(.all, 8)
+                }
+                .padding(.bottom, 20)
+                if content.isEmpty {
+                    EmptyView()
+                } else {
+                    Button(action:{}){
+                        Text("Send")
+                            .fontWeight(.medium)
+                            .padding(8)
+                            .frame(maxWidth: .infinity)
+                            .foregroundColor(Color("#9296F0"))
+                            .padding(10)
+                            .overlay(RoundedRectangle(cornerRadius: 10)
+                                        .stroke(.white, lineWidth: 0)
+                            )
+                            .background(RoundedRectangle(cornerRadius: 10).fill(.white))
+                    }
+                }
+            }
+            .padding()
         }
     }
 }
