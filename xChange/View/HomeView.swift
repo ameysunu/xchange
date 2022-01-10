@@ -12,8 +12,8 @@ struct HomeView: View {
         TabView {
             LetterView()
                 .tabItem {
-                    Image(systemName: "books.vertical.fill")
-                    Text("My Diary")
+                    Image(systemName: "paperplane")
+                    Text("Letters")
                 }
            Text("GlobalUsersView()")
                 .tabItem {

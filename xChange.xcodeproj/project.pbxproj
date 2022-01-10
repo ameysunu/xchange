@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9D7479E3277D1BCA00213F43 /* RealmAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7479E2277D1BCA00213F43 /* RealmAuth.swift */; };
 		9D7479E7277D1FA600213F43 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9D7479E6277D1FA600213F43 /* RealmSwift */; };
+		9D753654278C774C003FD756 /* LetterSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D753653278C774C003FD756 /* LetterSheet.swift */; };
 		9D844785277B66CE0022613A /* ForgotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D844784277B66CE0022613A /* ForgotView.swift */; };
 		9D908D4D2781D83000504E24 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D908D4C2781D83000504E24 /* HomeView.swift */; };
 		9D908D4F2781DB0A00504E24 /* LetterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D908D4E2781DB0A00504E24 /* LetterView.swift */; };
@@ -28,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		9D7479E2277D1BCA00213F43 /* RealmAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmAuth.swift; sourceTree = "<group>"; };
+		9D753653278C774C003FD756 /* LetterSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterSheet.swift; sourceTree = "<group>"; };
 		9D844784277B66CE0022613A /* ForgotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotView.swift; sourceTree = "<group>"; };
 		9D908D4C2781D83000504E24 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		9D908D4E2781DB0A00504E24 /* LetterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterView.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				9DD2E4CE277DDD4600D3C1E5 /* LoadView.swift */,
 				9D908D4C2781D83000504E24 /* HomeView.swift */,
 				9D908D4E2781DB0A00504E24 /* LetterView.swift */,
+				9D753653278C774C003FD756 /* LetterSheet.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 				9D908D4D2781D83000504E24 /* HomeView.swift in Sources */,
 				9DC9C508277A647000E0E9AD /* xChangeApp.swift in Sources */,
 				9DC9C519277A801E00E0E9AD /* KeyboardHandler.swift in Sources */,
+				9D753654278C774C003FD756 /* LetterSheet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
