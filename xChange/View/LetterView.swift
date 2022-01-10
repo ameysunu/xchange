@@ -12,6 +12,7 @@ import MapKit
 struct LetterView: View {
     @StateObject var locationManager = LocationManager()
     @State var letterCreate: Bool = false
+    @ObservedObject var dataStore = DataStore.shared
     
     
     var userLatitude: String {
@@ -39,9 +40,34 @@ struct LetterView: View {
 //                Text("latitude: \(userLatitude)")
 //                Text("longitude: \(userLongitude)")
 //            }
-            Text("You haven't created any letters.")
-                .fontWeight(.medium)
-            .font(.title2)
+//            Text("You haven't created any letters.")
+            ScrollView {
+                                if dataStore.letters?.count == 0{
+                                    Label {
+                                        Text("You haven't created any letters.")
+                                            .fontWeight(.medium)
+                                        .font(.title2)
+                                    }
+                                    icon: {
+                                    }
+                                }
+                                else if let letters = dataStore.letters {
+                                    ForEach(letters, id: \.self) { item in
+                                        ListView(title: item.title, content: item.content)
+                                        
+//                                        ListView(
+//                                            date: item.date,
+//                                            title: item.title,
+//                                            mood: item.mood,
+//                                            value: item.value,
+//                                            isPublic: item.isPublic
+//                                        )
+                                           // .padding(.horizontal)
+                                    }
+                                }
+                                
+                            }
+
             Spacer()
             Button(action:{
                 self.letterCreate.toggle()
@@ -49,7 +75,6 @@ struct LetterView: View {
                 HStack {
                     Text("Create a letter")
                 }
-                //.frame(width: .infinity)
                 .foregroundColor(.white)
                 .padding(10)
                 .overlay(RoundedRectangle(cornerRadius: 10)
