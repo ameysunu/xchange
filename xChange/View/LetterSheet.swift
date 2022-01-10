@@ -65,7 +65,7 @@ struct LetterSheet: View {
                                 self.alertItem = AlertItem(title: Text("Success"), message: Text("Your letter has been successfully sent."), dismissButton: .default(Text("Done")))
                                 title = ""
                                 content = ""
-
+                                
                             } else {
                                 self.alertItem = AlertItem(title: Text("Error"), message: Text("There has been an error while sending your letter."), dismissButton: .default(Text("Done")))
                             }
