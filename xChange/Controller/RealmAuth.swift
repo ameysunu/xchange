@@ -79,3 +79,22 @@ func addName(name: String, completion: @escaping (success) -> Void){
         }
     }
 }
+
+func addLetters(title: String, content: String, completion: @escaping (success) -> Void){
+    let realm = try! Realm()
+    var letters = UserLetters()
+    letters.id = app.currentUser?.id
+    letters.title = title
+    letters.content = content
+    
+    
+    if title.isEmpty{
+        completion(false)
+    } else {
+        try! realm.safeWrite {
+            realm.add(letters)
+            completion(true)
+        }
+    }
+    
+}

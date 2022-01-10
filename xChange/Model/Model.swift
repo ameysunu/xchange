@@ -29,3 +29,9 @@ class UserData: Object, Identifiable {
     @objc dynamic var name: String?
     @objc dynamic var image: NSData?
 }
+
+class UserLetters: Object, Identifiable {
+    @objc dynamic var id: String?
+    @objc dynamic var title: String?
+    @objc dynamic var content: String?
+}

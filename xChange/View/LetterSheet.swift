@@ -8,8 +8,11 @@
 import SwiftUI
 
 struct LetterSheet: View {
+    
     @State var title: String = ""
     @State var content: String = ""
+    
+    @State var alertItem: AlertItem?
     
     init() {
         UITextView.appearance().backgroundColor = .clear
@@ -55,7 +58,20 @@ struct LetterSheet: View {
                 if content.isEmpty {
                     EmptyView()
                 } else {
-                    Button(action:{}){
+                    Button(action:{
+                        addLetters(title: title, content: content){
+                            (success) -> Void in
+                            if success {
+                                self.alertItem = AlertItem(title: Text("Success"), message: Text("Your letter has been successfully sent."), dismissButton: .default(Text("Done")))
+                                title = ""
+                                content = ""
+
+                            } else {
+                                self.alertItem = AlertItem(title: Text("Error"), message: Text("There has been an error while sending your letter."), dismissButton: .default(Text("Done")))
+                            }
+                            
+                        }
+                    }){
                         Text("Send")
                             .fontWeight(.medium)
                             .padding(8)
@@ -70,6 +86,9 @@ struct LetterSheet: View {
                 }
             }
             .padding()
+            .alert(item: $alertItem){ item in
+                Alert(title: item.title, message: item.message, dismissButton: item.dismissButton)
+            }
         }
     }
 }
