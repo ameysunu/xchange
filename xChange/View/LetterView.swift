@@ -26,7 +26,7 @@ struct LetterView: View {
     var body: some View {
         VStack {
             HStack {
-                Text("Letters")
+                Text("Home")
                     .fontWeight(.medium)
                     .font(.title)
                 Spacer()

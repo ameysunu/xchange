@@ -12,14 +12,19 @@ struct HomeView: View {
         TabView {
             LetterView()
                 .tabItem {
+                    Image(systemName: "house")
+                    Text("Home")
+                }
+           OtherView()
+                .tabItem {
                     Image(systemName: "paperplane")
                     Text("Letters")
                 }
-           Text("GlobalUsersView()")
-                .tabItem {
-                    Image(systemName: "globe")
-                    Text("Global")
-                }
+            Text("GlobalUsersView()")
+                 .tabItem {
+                     Image(systemName: "globe.europe.africa")
+                     Text("Global")
+                 }
             
             Text("UserPage()")
                 .tabItem {
