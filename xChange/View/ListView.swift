@@ -12,6 +12,7 @@ struct ListView: View {
     @State var title: String?
     @State var content: String?
     @State var expanded: Bool = true
+    @State var letterIsPublic: Bool
     
     var body: some View {
         ZStack {
@@ -42,6 +43,24 @@ struct ListView: View {
                             .foregroundColor(.white)
                         Spacer()
                     }
+                    if letterIsPublic {
+                        HStack {
+                            Spacer()
+                            Button(action:{
+                                
+                            }){
+                                Text("Reply")
+                                    .foregroundColor(Color("#AA409D"))
+                            }
+                            
+                            Button(action:{
+                                
+                            }){
+                                Image(systemName: "hand.thumbsup")
+                                    .foregroundColor(Color("#AA409D"))
+                            }
+                        }
+                    }
                 }
             }
             .padding()
@@ -51,6 +70,6 @@ struct ListView: View {
 
 struct ListView_Previews: PreviewProvider {
     static var previews: some View {
-        ListView(title: "Test", content: "Hello!")
+        ListView(title: "Test", content: "Hello!", letterIsPublic: false)
     }
 }

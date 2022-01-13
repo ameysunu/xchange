@@ -53,7 +53,7 @@ struct LetterView: View {
                 }
                 else if let letters = dataStore.letters {
                     ForEach(letters, id: \.self) { item in
-                        ListView(title: item.title, content: item.content)
+                        ListView(title: item.title, content: item.content, letterIsPublic: false)
                     }
                 }
                 

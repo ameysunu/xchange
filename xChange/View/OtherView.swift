@@ -32,7 +32,7 @@ struct OtherView: View {
                 }
                 else if let letters = dataStore.allLetters {
                     ForEach(letters, id: \.self) { item in
-                        ListView(title: item.title, content: item.content)
+                        ListView(title: item.title, content: item.content, letterIsPublic: true)
                     }
                 }
                 
