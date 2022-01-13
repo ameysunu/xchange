@@ -17,6 +17,7 @@ class DataStore: NSObject, ObservableObject {
     
     @Published
     var letters: Results<UserLetters>?
+    var allLetters: Results<UserLetters>?
     
     private var token: NotificationToken? = nil
     private var realm = try! Realm()
@@ -35,6 +36,7 @@ class DataStore: NSObject, ObservableObject {
     private func fetchData() {
         user = realm.objects(UserData.self).filter("id = '\(uid!)'").first
         letters = realm.objects(UserLetters.self).filter("id = '\(uid!)'")
+        allLetters = realm.objects(UserLetters.self)
     }
     
     private func addObserver() {

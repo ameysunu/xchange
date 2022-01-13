@@ -27,6 +27,7 @@
 		9DD2E4CF277DDD4600D3C1E5 /* LoadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD2E4CE277DDD4600D3C1E5 /* LoadView.swift */; };
 		9DD2E4D1277DE64800D3C1E5 /* LoadList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD2E4D0277DE64800D3C1E5 /* LoadList.swift */; };
 		9DE3FEC52788DCF300C76BA1 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE3FEC42788DCF300C76BA1 /* LocationManager.swift */; };
+		9DF9D94027906B2500B912AC /* OtherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF9D93F27906B2500B912AC /* OtherView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		9DD2E4CE277DDD4600D3C1E5 /* LoadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadView.swift; sourceTree = "<group>"; };
 		9DD2E4D0277DE64800D3C1E5 /* LoadList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadList.swift; sourceTree = "<group>"; };
 		9DE3FEC42788DCF300C76BA1 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		9DF9D93F27906B2500B912AC /* OtherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 				9D908D4E2781DB0A00504E24 /* LetterView.swift */,
 				9D753653278C774C003FD756 /* LetterSheet.swift */,
 				9D753657278C84B8003FD756 /* ListView.swift */,
+				9DF9D93F27906B2500B912AC /* OtherView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 				9D908D4F2781DB0A00504E24 /* LetterView.swift in Sources */,
 				9DC9C520277A891E00E0E9AD /* RegisterView.swift in Sources */,
 				9DA61F0E2780922E00619F2E /* ImagePicker.swift in Sources */,
+				9DF9D94027906B2500B912AC /* OtherView.swift in Sources */,
 				9D7479E3277D1BCA00213F43 /* RealmAuth.swift in Sources */,
 				9DE3FEC52788DCF300C76BA1 /* LocationManager.swift in Sources */,
 				9D908D4D2781D83000504E24 /* HomeView.swift in Sources */,
