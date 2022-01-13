@@ -20,13 +20,13 @@ struct HomeView: View {
                     Image(systemName: "paperplane")
                     Text("Letters")
                 }
-            Text("GlobalUsersView()")
+            GlobalView()
                  .tabItem {
                      Image(systemName: "globe.europe.africa")
                      Text("Global")
                  }
             
-            Text("UserPage()")
+           UserView()
                 .tabItem {
                     Image(systemName: "person.fill")
                     Text("User Details")

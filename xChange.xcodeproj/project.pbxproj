@@ -28,6 +28,8 @@
 		9DD2E4D1277DE64800D3C1E5 /* LoadList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD2E4D0277DE64800D3C1E5 /* LoadList.swift */; };
 		9DE3FEC52788DCF300C76BA1 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE3FEC42788DCF300C76BA1 /* LocationManager.swift */; };
 		9DF9D94027906B2500B912AC /* OtherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF9D93F27906B2500B912AC /* OtherView.swift */; };
+		9DF9D9422790D9D700B912AC /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF9D9412790D9D700B912AC /* UserView.swift */; };
+		9DF9D9442790DD9400B912AC /* GlobalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF9D9432790DD9400B912AC /* GlobalView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +54,8 @@
 		9DD2E4D0277DE64800D3C1E5 /* LoadList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadList.swift; sourceTree = "<group>"; };
 		9DE3FEC42788DCF300C76BA1 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		9DF9D93F27906B2500B912AC /* OtherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherView.swift; sourceTree = "<group>"; };
+		9DF9D9412790D9D700B912AC /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
+		9DF9D9432790DD9400B912AC /* GlobalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +141,8 @@
 				9D753653278C774C003FD756 /* LetterSheet.swift */,
 				9D753657278C84B8003FD756 /* ListView.swift */,
 				9DF9D93F27906B2500B912AC /* OtherView.swift */,
+				9DF9D9412790D9D700B912AC /* UserView.swift */,
+				9DF9D9432790DD9400B912AC /* GlobalView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -220,6 +226,8 @@
 				9DC9C51E277A87B300E0E9AD /* Model.swift in Sources */,
 				9D753656278C834F003FD756 /* DataStore.swift in Sources */,
 				9DC9C50A277A647000E0E9AD /* ContentView.swift in Sources */,
+				9DF9D9442790DD9400B912AC /* GlobalView.swift in Sources */,
+				9DF9D9422790D9D700B912AC /* UserView.swift in Sources */,
 				9D753658278C84B8003FD756 /* ListView.swift in Sources */,
 				9DC9C516277A653200E0E9AD /* WelcomeView.swift in Sources */,
 				9DD2E4D1277DE64800D3C1E5 /* LoadList.swift in Sources */,
